@@ -1,0 +1,44 @@
+###  GET Request API 1 states
+GET http://localhost:3001/states/
+
+### GET Request API 2 states
+GET http://localhost:3001/states/8/
+
+### POST Request API 3 districts
+POST http://localhost:3001/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+### GET Request API 4 districts
+GET http://localhost:3001/districts/322/
+
+###  DELETE Request API 5 districts
+DELETE http://localhost:3001/districts/323/
+
+### PUT Request API 6 districts
+PUT http://localhost:3001/districts/324/
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+### GET Request API 7 States
+GET http://localhost:3001/states/1/stats/
+
+
+### GET Request API 8 districts:
+GET http://localhost:3001/districts/31/details/
